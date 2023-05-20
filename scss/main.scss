@@ -94,7 +94,8 @@ li a {
 
         .class-navegador {
 
-            height: 12vh;
+
+            height: 17vh;
 
             width: 100%;
 
@@ -124,6 +125,7 @@ li a {
                 padding: 15px 25px;
             }
         }
+
     }
 
     .menu-vertical-mobile {
@@ -321,10 +323,11 @@ li a {
     .icon-home {
         margin-left: 90%;
         position: fixed;
-        color: wheat;
-        background-color: blueviolet;
+        color: red;
+        background-color: wheat;
         border-radius: 50px;
     }
+
 
 
     footer {
@@ -1161,7 +1164,7 @@ li a {
 
 
 @media (min-width:1000px) {
-    .icon-home{
+    .icon-home {
         display: none;
     }
 
@@ -2196,7 +2199,7 @@ li a {
 
 
 @media(min-width:400px) {
-    .icon-home{
+    .icon-home {
         display: none;
     }
 
