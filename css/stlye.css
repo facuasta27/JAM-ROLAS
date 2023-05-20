@@ -151,6 +151,13 @@ li a {
   .class-contenedor .article-contenedor .articulos .info-articulo h5 {
     font-size: 0.8rem;
   }
+  .icon-home {
+    margin-left: 90%;
+    position: fixed;
+    color: wheat;
+    background-color: blueviolet;
+    border-radius: 50px;
+  }
   footer {
     background-color: wheat;
     height: 850px;
@@ -176,7 +183,7 @@ li a {
   .contenedor-general .contenedor-encabezado-guardado {
     text-align: center;
     min-width: 100%;
-    height: 200px;
+    height: 400px;
     background-image: url(../img/fondo-guardados.jfif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -371,8 +378,9 @@ li a {
   }
   .paginas-sitio .tab-bar {
     background-color: #6200EE;
-    margin-top: 10%;
+    margin-left: -3px;
     height: 56px;
+    width: 100%;
   }
   .paginas-sitio .tab-bar div {
     height: 100%;
@@ -395,8 +403,8 @@ li a {
   .contenedor-general .contenedor-encabezado-reservas {
     text-align: center;
     min-width: 100%;
-    height: 200px;
-    background-image: url(../img/fondo-palmeras.jpg);
+    height: 400px;
+    background-image: url(../img/fondo-reservas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -451,6 +459,27 @@ li a {
   .contenedor-general .contenedor-item-reserva div .btn-cancelar {
     margin-left: 2px;
   }
+  .tab-bar-reservas {
+    background-color: #6200EE;
+    height: 56px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  }
+  .tab-bar-reservas div {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .tab-bar-reservas div a {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
   .header-paginas {
     background-color: #8c49e9;
     height: 57px;
@@ -478,9 +507,10 @@ li a {
     height: 100vh;
   }
   .contenedor-general .contenedor-encabezado-perfil {
+    color: black;
     text-align: center;
     min-width: 100%;
-    height: 200px;
+    height: 400px;
     background-image: url(../img/fondo-perfil.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -527,6 +557,10 @@ li a {
     border: solid rgb(197, 197, 197);
     border-radius: 10px;
   }
+  .contenedor-general .contenedor-secundario .contenedor-items div a:hover {
+    color: white;
+    background-color: red;
+  }
   .tab-bar {
     background-color: #6200EE;
     height: 56px;
@@ -551,7 +585,7 @@ li a {
   .contenedor-general .contenedor-encabezado-alertas {
     text-align: center;
     min-width: 100%;
-    height: 200px;
+    height: 400px;
     background-image: url(../img/fondo-alertas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -707,6 +741,9 @@ li a {
   }
 }
 @media (min-width: 1000px) {
+  .icon-home {
+    display: none;
+  }
   .tab-bar {
     display: none;
   }
@@ -1112,7 +1149,6 @@ li a {
     text-align: center;
   }
   .contenedor-guardados .contenedor-hijo1 .contenedor-1 {
-    /* height: 100%; */
     display: grid;
     grid-template-rows: repeat(2, 1fr);
   }
@@ -1177,8 +1213,14 @@ li a {
   .tab-bar-roderick {
     display: none;
   }
+  .tab-bar-reservas {
+    display: none;
+  }
 }
 @media (min-width: 400px) {
+  .icon-home {
+    display: none;
+  }
   .tab-bar {
     display: none;
   }
@@ -1484,19 +1526,22 @@ li a {
     border-radius: 5px;
   }
   .contenedor-padre {
+    height: max-content;
     margin: 40px;
     width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .contenedor-padre .contenedor-hijo {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
   }
   .parrafos {
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   .contenedor-p1 {
@@ -1628,6 +1673,9 @@ li a {
   }
   .item-paginas a div:hover {
     background-color: red;
+  }
+  .tab-bar-reservas {
+    display: none;
   }
 }
 

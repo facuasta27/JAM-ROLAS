@@ -315,7 +315,17 @@ li a {
 
 
 
+
     }
+
+    .icon-home {
+        margin-left: 90%;
+        position: fixed;
+        color: wheat;
+        background-color: blueviolet;
+        border-radius: 50px;
+    }
+
 
     footer {
         background-color: wheat;
@@ -360,7 +370,7 @@ li a {
         .contenedor-encabezado-guardado {
             text-align: center;
             min-width: 100%;
-            height: 200px;
+            height: 400px;
             background-image: url(../img/fondo-guardados.jfif);
             background-repeat: no-repeat;
             background-size: cover;
@@ -636,8 +646,9 @@ li a {
 
         .tab-bar {
             background-color: #6200EE;
-            margin-top: 10%;
+            margin-left: -3px;
             height: 56px;
+            width: 100%;
 
             div {
                 height: 100%;
@@ -671,8 +682,8 @@ li a {
         .contenedor-encabezado-reservas {
             text-align: center;
             min-width: 100%;
-            height: 200px;
-            background-image: url(../img/fondo-palmeras.jpg);
+            height: 400px;
+            background-image: url(../img/fondo-reservas.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -749,7 +760,30 @@ li a {
 
     }
 
+    .tab-bar-reservas {
+        background-color: #6200EE;
+        height: 56px;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
 
+        div {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+
+        }
+
+        div a {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+    }
 
 
 
@@ -793,9 +827,10 @@ li a {
         height: 100vh;
 
         .contenedor-encabezado-perfil {
+            color: black;
             text-align: center;
             min-width: 100%;
-            height: 200px;
+            height: 400px;
             background-image: url(../img/fondo-perfil.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -840,6 +875,7 @@ li a {
                 min-height: 150px;
                 overflow: hidden;
 
+
                 div {
                     padding: 10px;
 
@@ -847,6 +883,11 @@ li a {
                         color: black;
                         border: solid rgb(197, 197, 197);
                         border-radius: 10px;
+                    }
+
+                    a:hover {
+                        color: white;
+                        background-color: red;
                     }
                 }
 
@@ -887,7 +928,7 @@ li a {
         .contenedor-encabezado-alertas {
             text-align: center;
             min-width: 100%;
-            height: 200px;
+            height: 400px;
             background-image: url(../img/fondo-alertas.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -1120,6 +1161,9 @@ li a {
 
 
 @media (min-width:1000px) {
+    .icon-home{
+        display: none;
+    }
 
     .tab-bar {
         display: none;
@@ -2029,7 +2073,6 @@ li a {
 
             .contenedor-1 {
 
-                /* height: 100%; */
 
                 display: grid;
 
@@ -2084,6 +2127,7 @@ li a {
                             height: 100%;
 
                             .parte-imagen {
+
                                 max-width: 70%;
                                 max-height: 78px;
                             }
@@ -2141,6 +2185,10 @@ li a {
         display: none;
     }
 
+    .tab-bar-reservas {
+        display: none;
+    }
+
 
 
 }
@@ -2148,6 +2196,9 @@ li a {
 
 
 @media(min-width:400px) {
+    .icon-home{
+        display: none;
+    }
 
     .tab-bar {
         display: none;
@@ -2868,9 +2919,15 @@ li a {
 
     .contenedor-padre {
 
+        height: max-content;
+
         margin: 40px;
 
         width: 100%;
+
+        margin-left: 10px;
+
+        margin-right: 10px;
 
         .contenedor-hijo {
 
@@ -2878,7 +2935,7 @@ li a {
 
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
             grid-template-rows: repeat(2, 1fr);
 
@@ -2891,14 +2948,13 @@ li a {
     }
 
     .parrafos {
-        font-size: 2rem;
+        font-size: 1rem;
 
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     }
 
     .contenedor-p1 {
-
         grid-row: 1/2;
 
     }
@@ -3163,5 +3219,9 @@ li a {
         a div:hover {
             background-color: red;
         }
+    }
+
+    .tab-bar-reservas {
+        display: none;
     }
 }
