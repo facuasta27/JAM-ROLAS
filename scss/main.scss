@@ -353,7 +353,7 @@ li a {
 
     }
 
-    // ---GUARDADOS---
+    // ---favoritos---
 
     .class-header {
         a h1 {
@@ -374,7 +374,7 @@ li a {
             text-align: center;
             min-width: 100%;
             height: 400px;
-            background-image: url(../img/fondo-guardados.jfif);
+            background-image: url(../img/fondo-favoritos.jfif);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -420,9 +420,9 @@ li a {
 
         }
 
-        .article-guardados {
+        .article-favoritos {
 
-            .guardados {
+            .favoritos {
                 margin-top: 2px;
                 background-color: wheat;
                 display: grid;
@@ -2048,11 +2048,11 @@ li a {
 
 
 
-    // ---GUARDADOS---
+    // ---favoritos---
 
 
 
-    .contenedor-guardados {
+    .contenedor-favoritos {
 
         height: 100vh;
 
@@ -2066,7 +2066,7 @@ li a {
 
             grid-column: span 2;
 
-            .guardados-titulo h2 {
+            .favoritos-titulo h2 {
 
                 font-size: 2rem;
 
@@ -2111,11 +2111,11 @@ li a {
 
                 }
 
-                .article-guardados {
+                .article-favoritos {
                     height: 100%;
                 }
 
-                .guardados {
+                .favoritos {
                     border: solid black 0.5px;
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
@@ -2922,8 +2922,6 @@ li a {
 
     .contenedor-padre {
 
-        height: max-content;
-
         margin: 40px;
 
         width: 100%;
@@ -2934,13 +2932,15 @@ li a {
 
         .contenedor-hijo {
 
+            height: 250vh;
+
             width: 100%;
 
             display: grid;
 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1, 1fr);
 
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
             align-items: center;
 
@@ -2958,17 +2958,25 @@ li a {
     }
 
     .contenedor-p1 {
+        margin-top: -300px;
+        grid-column: 1/5;
+
         grid-row: 1/2;
 
     }
 
     .contenedor-p2 {
 
-        height: 80%;
+        grid-column: 1/5;
 
-        grid-row: 2/3;
+        height: min-content;
+
+        width: 100%;
+
+        grid-row: 3/4;
 
         grid-column: span 2;
+
 
         text-align: center;
 
@@ -2987,7 +2995,7 @@ li a {
 
         width: 100%;
 
-        height: 100%;
+        height: min-content;
 
         gap: 50px;
 
@@ -3005,7 +3013,6 @@ li a {
     }
 
     .equipo-item {
-
         display: grid;
 
         grid-template-columns: repeat(4, 1fr);
@@ -3020,7 +3027,7 @@ li a {
 
     }
 
-    // GUARDADOS
+    // favoritos
 
     .class-header {
 
