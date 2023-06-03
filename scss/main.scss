@@ -724,6 +724,13 @@ li a {
                     color: black;
                     border: solid gainsboro;
                     border-radius: 10px;
+                  
+                  
+                }
+
+                a:hover{
+                    color: white;
+                    background-color: red;
                 }
 
             }
@@ -1204,7 +1211,7 @@ li a {
 
         color: wheat;
 
-        background-color: black;
+        background-color: red;
 
         position: sticky;
 

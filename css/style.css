@@ -438,6 +438,10 @@ li a {
     border: solid gainsboro;
     border-radius: 10px;
   }
+  .contenedor-general .reservas-nav-contenedor nav ul a:hover {
+    color: white;
+    background-color: red;
+  }
   .contenedor-general .contenedor-item-reserva {
     background-color: gainsboro;
     margin-top: 8px;
@@ -763,7 +767,7 @@ li a {
   }
   .class-header {
     color: wheat;
-    background-color: black;
+    background-color: red;
     position: sticky;
     top: 0;
     min-width: 401px;
