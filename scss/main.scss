@@ -724,11 +724,11 @@ li a {
                     color: black;
                     border: solid gainsboro;
                     border-radius: 10px;
-                  
-                  
+
+
                 }
 
-                a:hover{
+                a:hover {
                     color: white;
                     background-color: red;
                 }
@@ -1582,6 +1582,8 @@ li a {
 
                     .img-sitio {
 
+                        object-fit: contain;
+
                         min-width: 100%;
 
 
@@ -2011,10 +2013,10 @@ li a {
 
     .contenedor-padre {
 
-        height: 800px;
+        height: min-content;
+
 
         .contenedor-hijo {
-            height: 1600px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
@@ -2135,8 +2137,10 @@ li a {
                         .parte-img {
                             width: 50%;
                             height: 100%;
+                            object-fit: contain;
 
                             .parte-imagen {
+                                object-fit: contain;
 
                                 max-width: 70%;
                                 max-height: 78px;
@@ -2205,7 +2209,7 @@ li a {
 
 
 
-@media(min-width:400px) {
+@media(min-width:480px) {
     .icon-home {
         display: none;
     }
